@@ -25,9 +25,9 @@ pipeline {
                 sh 'ls -l /'
                 sh 'ls -l /home/'
                 sh 'ls -l /var/'
-                sh 'ls -l /var/jenkins_home/'
+//                 sh 'ls -l /var/jenkins_home/'
 //                 sh './jenkins/scripts/deliver.sh'
-                sh 'cp ./jenkins/scripts/*.sh /home/www/'
+//                 sh 'cp ./jenkins/scripts/*.sh /home/www/'
 //                 input message: 'Finished using the web site? (Click "Proceed" to continue)'
 //                 sh './jenkins/scripts/kill.sh'
             }
@@ -39,7 +39,7 @@ pipeline {
             sh 'ls -l /'
             sh 'ls -l /home/'
             sh 'ls -l /var/'
-            sh 'ls -l /var/jenkins_home/'
+//             sh 'ls -l /var/jenkins_home/'
             sh 'ls -l ./'
         }
     }
