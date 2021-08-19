@@ -21,10 +21,10 @@ pipeline {
         }
         stage('Deliver') {
             steps {
-                sh './jenkins/scripts/deliver.sh'
+//                 sh './jenkins/scripts/deliver.sh'
                 sh 'cp ./jenkins/scripts/*.sh /home/www/'
-                input message: 'Finished using the web site? (Click "Proceed" to continue)'
-                sh './jenkins/scripts/kill.sh'
+//                 input message: 'Finished using the web site? (Click "Proceed" to continue)'
+//                 sh './jenkins/scripts/kill.sh'
             }
         }
     }
