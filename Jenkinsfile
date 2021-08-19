@@ -33,4 +33,14 @@ pipeline {
             }
         }
     }
+    post {
+        always {
+            sh 'pwd'
+            sh 'ls -l /'
+            sh 'ls -l /home/'
+            sh 'ls -l /var/'
+            sh 'ls -l /var/jenkins_home/'
+            sh 'ls -l ./'
+        }
+    }
 }
