@@ -21,6 +21,8 @@ pipeline {
 //         }
         stage('Deliver') {
             steps {
+                sh 'pwd'
+                sh 'ls -l'
 //                 sh './jenkins/scripts/deliver.sh'
                 sh 'cp ./jenkins/scripts/*.sh /home/www/'
 //                 input message: 'Finished using the web site? (Click "Proceed" to continue)'
