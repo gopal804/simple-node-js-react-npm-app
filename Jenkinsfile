@@ -9,16 +9,16 @@ pipeline {
         CI = 'true'
     }
     stages {
-        stage('Build') { 
-            steps {
+//         stage('Build') { 
+//             steps {
 //                 sh 'npm install' 
-            }
-        }
-        stage('Test') {
-            steps {
+//             }
+//         }
+//         stage('Test') {
+//             steps {
 //                 sh './jenkins/scripts/test.sh'
-            }            
-        }
+//             }            
+//         }
         stage('Deliver') {
             steps {
 //                 sh './jenkins/scripts/deliver.sh'
